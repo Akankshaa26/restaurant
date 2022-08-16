@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: cursive;
+        }
+        img{
+            width: 100%;
+            height: 650px;
+            z-index: -1;
+            position: absolute;
+        }
+        input{
+            width: 60%;
+            height: 25px;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="table3.jpg">
+    <div style="background-color:black; opacity: 0.8; height:50px;">
+    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" style="color: white; margin-top:8px;" width="30" height="30" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+      </svg></a>
+    </div>
+    <center>
+        <br>
+    <h1 style="font-size:40px; color: white;">Book Your Table</h1>
+    <div class="alert alert-success" role="alert">
+        <p style="color: rgb(7, 175, 111); width:800px ; font-size:30px;"></p>
+      </div>
+    </center>
+    <center>
+    <div style="width: 50%; height: 400px; background-color: black; opacity: 0.7;">
+        <br>
+        <input class="input" placeholder="Name" type="text" required><br>
+        <input class="input" placeholder="Date of Booking" type="date" required><br>
+        <input class="input" placeholder="Time of Booking" type="time" required><br>
+        <input class="input" placeholder="Number of people" type="text" required><br>
+        <input class="input" placeholder="Mobile number" type="text" required>
+
+    </div><br>
+    <button onclick="save(this)" id="but" style="background-color: red; border:none; width:120px; height:50px; font-size:25px;">Book</button>
+</center>
+<script src="restaurant.js"></script>
+</body>
+</html>
